@@ -111,7 +111,7 @@ body {
 }
 
 .pic__container:hover .pic__overlay {
-	display: block;
+/*	display: block;*/
 	background: rgba(0, 0, 0, .6);
 }
 
