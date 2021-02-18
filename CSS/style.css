@@ -3,8 +3,7 @@ html, body {
 }
 
 body {
-	display:flex;
-	flex-direction:column;
+	/*display:flex;*/
 	background-image:url("../images/staura.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -64,7 +63,7 @@ body {
 	margin:auto;
 	min-height:100%;
 	overflow:hidden;
-	flex: 1 0 auto;
+	/*flex: 1 0 auto;*/
 	padding: 10px;
 }
 
@@ -92,49 +91,58 @@ body {
 }
 
 .pic {
-	max-width:100%;
+	width:100%;
 	height:auto;
-	max-height:100%;
-	margin-top:8px;
-	vertical-align:middle;
 }
 
-.row {
-	display:flex;
-	flex-wrap:wrap;
-	padding:0 4px;
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.column {
-	flex:25%;
-	padding:0 4px;
+.container {
+  position: relative;
+  width: 25%;
+  padding: 0px;
+  margin: 10px;
 }
 
-.pic__container:hover .pic__overlay {
-/*	display: block;*/
-	background: rgba(0, 0, 0, .6);
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.pic--text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #50C878;
 }
 
-.pic__container .pic__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
- 	width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
+.container:hover .overlay {
+  opacity:.6;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #fpHead {
