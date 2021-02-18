@@ -3,8 +3,7 @@ html, body {
 }
 
 body {
-	display:flex;
-	flex-direction:column;
+	/*display:flex;*/
 	background-image:url("../images/staura.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -64,7 +63,7 @@ body {
 	margin:auto;
 	min-height:100%;
 	overflow:hidden;
-	flex: 1 0 auto;
+	/*flex: 1 0 auto;*/
 	padding: 10px;
 }
 
@@ -94,57 +93,57 @@ body {
 .pic {
 	width:100%;
 	height:auto;
-	margin-top:8px;
-	vertical-align:middle;
 }
 
-/*.pic__grid {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-}*/
-
-.pic__container {
-	position:relative;
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.pic__image {
-	line-height:0;
-	overflow:hidden;
+.container {
+  position: relative;
+  width: 25%;
+  padding: 0px;
+  margin: 10px;
 }
 
-.pic__image img {
-	filter: blur(0px);
-	transition: filter 0.3s ease-in;
-	transform: scale(1.1);
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.pic__container:hover .pic--text {
-	opacity:1;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #50C878;
 }
 
-.pic:hover {
-	filter: blur(2px);
+.container:hover .overlay {
+  opacity:.6;
 }
 
-.pic--text {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-decoration: none;
-	z-index: 1;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity .5s;
-	background: rgba(90,0,10,0.4);
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 #fpHead {
 	padding-top:10px;
