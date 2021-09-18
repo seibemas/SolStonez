@@ -49,7 +49,7 @@ body {
 }
 
 .iconBar a:hover {
-	color:#50C878;
+	color:#FFD484;
 }
 
 .topLogo {
@@ -74,7 +74,7 @@ body {
 
 .backAlign {
 	text-align:center;
-	background-color:#50C878;
+	background-color:#708573;
 }
 
 .connectHeaders {
@@ -85,7 +85,7 @@ body {
 
 .mainFooter {
 	text-align:center;
-	background-color:#FFD700;
+	background-color:#FFD484;
 	flex-shrink: 0;
 	padding: 10px;
 }
@@ -197,7 +197,7 @@ body {
 }
 
 #navbar {
-	background-color:#FFD700;
+	background-color:#FFD484;
 }
 
 #navbar ul{
