@@ -3,7 +3,6 @@ html, body {
 }
 
 body {
-	/*display:flex;*/
 	background-image:url("../images/staura.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -63,7 +62,6 @@ body {
 	margin:auto;
 	min-height:100%;
 	overflow:hidden;
-	/*flex: 1 0 auto;*/
 	padding: 10px;
 }
 
@@ -83,11 +81,15 @@ body {
 	padding-top:10px;
 }
 
+.footerContainer {
+	position: relative;
+	min-height: 100vh;
+}
+
 .mainFooter {
 	text-align:center;
 	background-color:#FFD484;
 	flex-shrink: 0;
-	padding: 10px;
 }
 
 .pic {
@@ -96,53 +98,53 @@ body {
 }
 
 .img-area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
-  position: relative;
-  width: 25%;
-  padding: 0px;
-  margin: 10px;
+	position: relative;
+	width: 25%;
+	padding: 0px;
+	margin: 10px;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #50C878;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #50C878;
 }
 
 .container:hover .overlay {
-  opacity:.6;
+	opacity:.6;
 }
 
 .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 #fpHead {
