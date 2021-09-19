@@ -89,7 +89,12 @@ body {
 .mainFooter {
 	text-align:center;
 	background-color:#FFD484;
+	color: #7c6992;
+	font-size: 22px;
+	text-decoration: none;
 	flex-shrink: 0;
+	padding-bottom: 14px;
+	padding-top: 10px;
 }
 
 .pic {
@@ -212,7 +217,7 @@ body {
 }
 
 #navbar a {
-	color:#4B0082;
+	color:#7c6992;
 	text-decoration:none;
 	font-size:16px;
 	transition:all 0.4s ease;
